@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting de Videojuegos</title>
+    <title>Hostly - Hosting de Videojuegos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #121212;
             color: #ffffff;
+            font-family: 'Arial', sans-serif;
         }
         .navbar {
             background-color: #1f1f1f;
+            padding: 15px;
         }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center;
+            background: url('https://source.unsplash.com/1600x900/?gaming,technology') no-repeat center center;
             background-size: cover;
-            height: 400px;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,17 +28,28 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
+            font-size: 2.5rem;
         }
         .card {
             background-color: #1f1f1f;
             color: #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">GameHost</a>
+            <a class="navbar-brand" href="#inicio">Hostly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,57 +57,57 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#soporte">Soporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desarrolladores">Desarrolladores</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="hero">
-        <h1>Hosting Premium para tus Videojuegos Favoritos</h1>
+        <h1>Tu hardware no es tu límite. Vive el gaming sin fronteras.</h1>
     </header>
     <section id="planes" class="py-5">
         <div class="container text-center">
-            <h2>Nuestros Planes</h2>
-            <div class="row mt-4">
+            <h2 class="mb-4">Planes de Hosting</h2>
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="card p-3">
+                    <div class="card p-3 shadow-lg">
                         <h3>Plan Básico</h3>
-                        <p>Ideal para servidores pequeños</p>
-                        <p><strong>$5/mes</strong></p>
+                        <p>Para jugadores casuales</p>
+                        <p><strong>5€/mes</strong></p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3">
+                    <div class="card p-3 shadow-lg">
                         <h3>Plan Avanzado</h3>
                         <p>Para comunidades en crecimiento</p>
-                        <p><strong>$10/mes</strong></p>
+                        <p><strong>10€/mes</strong></p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3">
+                    <div class="card p-3 shadow-lg">
                         <h3>Plan Pro</h3>
-                        <p>Rendimiento máximo para grandes servidores</p>
-                        <p><strong>$20/mes</strong></p>
+                        <p>Máximo rendimiento y estabilidad</p>
+                        <p><strong>20€/mes</strong></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="soporte" class="py-5 bg-dark text-center">
+    <section id="desarrolladores" class="py-5 bg-dark text-center">
         <div class="container">
-            <h2>Soporte 24/7</h2>
-            <p>Estamos aquí para ayudarte en todo momento.</p>
+            <h2>Para Desarrolladores</h2>
+            <p>Sube y monetiza tus videojuegos con nuestra plataforma segura y optimizada.</p>
         </div>
     </section>
     <section id="contacto" class="py-5 text-center">
         <div class="container">
             <h2>Contacto</h2>
-            <p>Email: soporte@gamehost.com</p>
+            <p>Email: soporte@hostly.com</p>
         </div>
     </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 GameHost. Todos los derechos reservados.</p>
+    <footer class="footer text-white text-center">
+        <p>&copy; 2025 Hostly. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
