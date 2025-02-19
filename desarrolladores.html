@@ -1,141 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hostly - Para Desarrolladores</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<style>
-    body {
-        background-color: #121212;
-        background-color: #0d1117;
-        color: #ffffff;
-        font-family: 'Arial', sans-serif;
-    }
-    .navbar {
-        background-color: #1f1f1f;
-        background-color: #161b22;
-        padding: 15px;
-    }
-    .hero {
-        background: url('https://source.unsplash.com/1600x900/?coding,technology') no-repeat center center;
-        background: url('https://static.vecteezy.com/system/resources/previews/006/413/089/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg') no-repeat center center;
-        background-size: cover;
-        height: 400px;
-        background-position: center;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        transition: height 0.5s ease-in-out;
-    }
-    .hero h1 {
-        background: rgba(0, 0, 0, 0.7);
-        background: rgba(0, 0, 0, 0.6);
-        padding: 20px;
-        border-radius: 10px;
-        font-size: 2.5rem;
-        font-size: 4rem;
-        color: #58a6ff;
-        transition: font-size 0.5s ease-in-out;
-    }
-    .shrink {
-        height: 50vh !important;
-    }
-    .shrink h1 {
-        font-size: 2.5rem !important;
-    }
-    .card {
-        background-color: #1f1f1f;
-        background-color: #21262d;
-        color: #ffffff;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.3);
-    }
-    .card .extra-info {
-        display: none;
-        padding-top: 10px;
-    }
-    .footer {
-        background-color: #1f1f1f;
-        background-color: #161b22;
-        padding: 20px;
-        font-size: 1.2rem;
-    }
-    .btn-primary {
-        background-color: #58a6ff;
-        border-color: #58a6ff;
-    }
-    .btn-primary:hover {
-        background-color: #1f6feb;
-        border-color: #1f6feb;
-    }
-</style>
+    <title>Hostly - Para Desarrolladores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #161b22;
+            padding: 15px;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?coding,technology') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            transition: height 0.5s ease-in-out;
+        }
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 4rem;
+            color: #58a6ff;
+        }
+        .card {
+            background-color: #21262d;
+            color: #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.3);
+        }
+        .extra-info {
+            display: none;
+            padding-top: 10px;
+        }
+        .footer {
+            background-color: #161b22;
+            padding: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #58a6ff;
+            border-color: #58a6ff;
+        }
+        .btn-primary:hover {
+            background-color: #1f6feb;
+            border-color: #1f6feb;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
         <div class="container">
             <a class="navbar-brand" href="index.html">Hostly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            </div>
+            </button>
         </div>
     </nav>
+
     <header class="hero">
-    <header class="hero animate__animated animate__fadeIn" id="hero">
         <h1>Desarrolla, Publica y Monetiza en Hostly</h1>
     </header>
+
     <section class="py-5">
-    <section class="py-5 animate__animated animate__fadeInUp">
         <div class="container text-center">
-            <h2>¿Por qué elegir Hostly?</h2>
             <h2 class="text-primary">¿Por qué elegir Hostly?</h2>
             <p>Te ofrecemos una plataforma segura y optimizada para publicar y monetizar tus videojuegos sin preocuparte por la infraestructura.</p>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card p-3 shadow-lg">
-                        <h3>Fácil Integración</h3>
                     <div class="card p-3 shadow-lg" onclick="toggleInfo(this)">
                         <h3 class="text-primary">Fácil Integración</h3>
                         <p>Utiliza nuestras APIs y SDKs para implementar tu juego en minutos.</p>
                         <div class="extra-info">
-                            <p>Te proporcionamos ejemplos detallados y documentación completa para integrar tu juego sin complicaciones. La API es simple de usar y se adapta a diferentes plataformas.</p>
+                            <p>Te proporcionamos ejemplos detallados y documentación completa para integrar tu juego sin complicaciones.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3 shadow-lg">
-                        <h3>Monetización Justa</h3>
                     <div class="card p-3 shadow-lg" onclick="toggleInfo(this)">
                         <h3 class="text-primary">Monetización Justa</h3>
                         <p>Gana dinero con tu juego con nuestro sistema de suscripciones y compras in-game.</p>
                         <div class="extra-info">
-                            <p>Te ofrecemos un sistema transparente de ganancias con porcentajes justos, sin costos ocultos, y la opción de controlar los precios y promociones de tus productos dentro del juego.</p>
+                            <p>Te ofrecemos un sistema transparente de ganancias con porcentajes justos, sin costos ocultos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3 shadow-lg">
-                        <h3>Soporte 24/7</h3>
                     <div class="card p-3 shadow-lg" onclick="toggleInfo(this)">
                         <h3 class="text-primary">Soporte 24/7</h3>
                         <p>Un equipo de expertos está disponible para ayudarte en cualquier momento.</p>
                         <div class="extra-info">
-                            <p>Accede a asistencia en cualquier momento del día a través de chat en vivo, correo electrónico o teléfono. Nuestro equipo está capacitado para resolver cualquier problema técnico o de integración.</p>
+                            <p>Accede a asistencia en cualquier momento del día a través de chat en vivo, correo electrónico o teléfono.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="py-5 bg-dark text-center">
         <div class="container">
             <h2>Comienza Ahora</h2>
@@ -143,10 +121,11 @@
             <a href="#" class="btn btn-primary">Registrarse</a>
         </div>
     </section>
+
     <footer class="footer text-white text-center">
-    <footer class="footer text-white text-center animate__animated animate__fadeInUp">
         <p>&copy; 2025 Hostly. Todos los derechos reservados.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleInfo(card) {
