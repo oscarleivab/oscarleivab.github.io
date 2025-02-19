@@ -16,8 +16,14 @@
             background-color: #161b22;
             padding: 15px;
         }
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: #58a6ff !important;
+        }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?coding,technology') no-repeat center center;
+            background: url('https://static.vecteezy.com/system/resources/previews/006/413/089/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg') no-repeat center center;
             background-size: cover;
             height: 100vh;
             display: flex;
@@ -68,20 +74,64 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Hostly</a>
+            <a class="navbar-brand" href="#inicio">Hostly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planes">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desarrolladores">Desarrolladores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="inicio">
         <h1>Desarrolla, Publica y Monetiza en Hostly</h1>
     </header>
 
-    <section class="py-5">
+    <section id="planes" class="py-5">
         <div class="container text-center">
-            <h2 class="text-primary">¿Por qué elegir Hostly?</h2>
-            <p>Te ofrecemos una plataforma segura y optimizada para publicar y monetizar tus videojuegos sin preocuparte por la infraestructura.</p>
+            <h2 class="text-primary">Nuestros Planes</h2>
+            <p>Ofrecemos planes para todos los tamaños de proyectos, desde pequeños desarrolladores hasta grandes empresas.</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-lg">
+                        <h3 class="text-primary">Plan Básico</h3>
+                        <p>Ideal para desarrolladores individuales. Obtén acceso a herramientas básicas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-lg">
+                        <h3 class="text-primary">Plan Profesional</h3>
+                        <p>Para estudios de desarrollo con necesidades más avanzadas. Accede a soporte premium.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-lg">
+                        <h3 class="text-primary">Plan Enterprise</h3>
+                        <p>El plan más completo para grandes empresas con soporte 24/7 y personalización total.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="desarrolladores" class="py-5 bg-dark text-center">
+        <div class="container">
+            <h2 class="text-white">¿Por qué elegir Hostly?</h2>
+            <p class="text-white">Te ofrecemos una plataforma segura y optimizada para publicar y monetizar tus videojuegos sin preocuparte por la infraestructura.</p>
             <div class="row mt-4">
                 <div class="col-md-4">
                     <div class="card p-3 shadow-lg" onclick="toggleInfo(this)">
@@ -114,11 +164,11 @@
         </div>
     </section>
 
-    <section class="py-5 bg-dark text-center">
+    <section id="contacto" class="py-5 text-center">
         <div class="container">
-            <h2>Comienza Ahora</h2>
-            <p>Regístrate en nuestra plataforma y accede a las herramientas de desarrollo.</p>
-            <a href="#" class="btn btn-primary">Registrarse</a>
+            <h2 class="text-primary">Contacto</h2>
+            <p>¿Tienes alguna pregunta o necesitas más información? Contáctanos ahora.</p>
+            <a href="mailto:contacto@hostly.com" class="btn btn-primary">Enviar Correo</a>
         </div>
     </section>
 
