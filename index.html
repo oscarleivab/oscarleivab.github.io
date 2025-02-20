@@ -16,22 +16,22 @@
             background-color: #161b22;
             padding: 15px;
         }
+
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?gaming,server') no-repeat center center;
-            background-size: cover;
             height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 20px;
         }
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            animation: fadeInDown 1.5s;
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
+
         .btn-primary {
             background-color: #58a6ff;
             border: none;
@@ -39,13 +39,29 @@
             font-size: 1.2rem;
             margin-top: 20px;
         }
+
         .btn-primary:hover {
             background-color: #1f6feb;
         }
+
         .section {
             padding: 60px 20px;
             text-align: center;
         }
+
+        .video-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #161b22;
+        }
+
+        .promo-video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         .footer {
             background-color: #161b22;
             padding: 20px;
@@ -71,29 +87,46 @@
             </div>
         </div>
     </nav>
+
     <header class="hero animate__animated animate__fadeIn">
-        <h1>Hostly - Revolucionando el Hosting de Videojuegos</h1>
-        <p>Infraestructura optimizada para jugadores y desarrolladores</p>
-        <a href="planes.html" class="btn btn-primary">Descubre nuestros planes</a>
+        <div class="hero-content">
+            <h1>Hostly - Revolucionando el Hosting de Videojuegos</h1>
+            <p>Infraestructura optimizada para jugadores y desarrolladores</p>
+            <a href="planes.html" class="btn btn-primary">Descubre nuestros planes</a>
+        </div>
     </header>
+
+    <section class="video-section">
+        <div class="container">
+            <h2 class="text-primary">Descubre Hostly</h2>
+            <video controls class="promo-video">
+                <source src="Oscar 2ºDAM - Anuncio Hostly.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <h2 class="text-primary">Nuestra Misión</h2>
             <p>En Hostly, nuestra misión es ofrecer servidores de alto rendimiento con la mejor seguridad y estabilidad del mercado.</p>
         </div>
     </section>
+
     <section class="section bg-dark">
         <div class="container">
             <h2 class="text-primary">Nuestra Visión</h2>
             <p>Ser la plataforma de hosting de videojuegos más confiable y eficiente, garantizando una experiencia fluida a comunidades de todo el mundo.</p>
         </div>
     </section>
+
     <section class="section">
         <div class="container">
             <h2 class="text-primary">Valores</h2>
             <p>Innovación, rendimiento y soporte excepcional son los pilares de Hostly.</p>
         </div>
     </section>
+
     <footer class="footer">
         <p>&copy; 2025 Hostly. Todos los derechos reservados.</p>
         <p>Síguenos en:
@@ -102,6 +135,7 @@
             <a href="#">LinkedIn</a>
         </p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
