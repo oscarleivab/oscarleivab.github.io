@@ -16,7 +16,9 @@
             background-color: #161b22;
             padding: 15px;
         }
-
+        .navbar-brand img {
+            height: 100px; /* Aumentado el tamaño del logo */
+        }
         .hero {
             height: 100vh;
             display: flex;
@@ -25,13 +27,11 @@
             text-align: center;
             padding: 20px;
         }
-
         .hero-content {
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
         }
-
         .btn-primary {
             background-color: #58a6ff;
             border: none;
@@ -39,29 +39,24 @@
             font-size: 1.2rem;
             margin-top: 20px;
         }
-
         .btn-primary:hover {
             background-color: #1f6feb;
         }
-
         .section {
             padding: 60px 20px;
             text-align: center;
         }
-
         .video-section {
             text-align: center;
             padding: 60px 20px;
             background-color: #161b22;
         }
-
         .promo-video {
             width: 80%;
             max-width: 800px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         .footer {
             background-color: #161b22;
             padding: 20px;
@@ -73,7 +68,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Hostly</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo 1 Nuevo.png" alt="Hostly Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -124,6 +121,14 @@
         <div class="container">
             <h2 class="text-primary">Valores</h2>
             <p>Innovación, rendimiento y soporte excepcional son los pilares de Hostly.</p>
+        </div>
+    </section>
+
+    <section class="section bg-dark">
+        <div class="container">
+            <h2 class="text-primary">Responsabilidad Social Corporativa</h2>
+            <p>El compromiso voluntario de las empresas de gestionar sus actividades considerando el impacto económico, social y ambiental, contribuyendo al desarrollo sostenible y al bienestar de las comunidades donde operan.</p>
+            <p>En Hostly, fomentamos el uso de energías renovables para el mantenimiento de los servidores, implementamos programas de inclusión social para gamers y organizamos eventos solidarios con recompensas destinadas a obras benéficas.</p>
         </div>
     </section>
 
