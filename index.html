@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
-            background-color: #0d1117;
-            color: #ffffff;
+            background-color: #f8f9fa;
+            color: #212529;
             font-family: 'Arial', sans-serif;
         }
         .navbar {
-            background-color: #161b22;
+            background-color: #ffffff;
             padding: 15px;
+            border-bottom: 1px solid #dee2e6;
         }
         .navbar-brand img {
-            height: 100px; /* Aumentado el tamaño del logo */
+            height: 80px;
         }
         .hero {
             height: 100vh;
@@ -26,21 +27,24 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
+            background: #007bff;
+            color: white;
         }
         .hero-content {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .btn-primary {
-            background-color: #58a6ff;
+            background-color: #007bff;
             border: none;
             padding: 12px 24px;
             font-size: 1.2rem;
             margin-top: 20px;
         }
         .btn-primary:hover {
-            background-color: #1f6feb;
+            background-color: #0056b3;
         }
         .section {
             padding: 60px 20px;
@@ -49,24 +53,32 @@
         .video-section {
             text-align: center;
             padding: 60px 20px;
-            background-color: #161b22;
+            background-color: #f1f1f1;
         }
         .promo-video {
             width: 80%;
             max-width: 800px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .footer {
-            background-color: #161b22;
+            background-color: #ffffff;
             padding: 20px;
             font-size: 1.2rem;
             text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="Logo 1 Nuevo.png" alt="Hostly Logo">
@@ -110,7 +122,7 @@
         </div>
     </section>
 
-    <section class="section bg-dark">
+    <section class="section bg-light">
         <div class="container">
             <h2 class="text-primary">Nuestra Visión</h2>
             <p>Ser la plataforma de hosting de videojuegos más confiable y eficiente, garantizando una experiencia fluida a comunidades de todo el mundo.</p>
@@ -124,7 +136,7 @@
         </div>
     </section>
 
-    <section class="section bg-dark">
+    <section class="section bg-light">
         <div class="container">
             <h2 class="text-primary">Responsabilidad Social Corporativa</h2>
             <p>El compromiso voluntario de las empresas de gestionar sus actividades considerando el impacto económico, social y ambiental, contribuyendo al desarrollo sostenible y al bienestar de las comunidades donde operan.</p>
