@@ -8,65 +8,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
-            background-color: #0d1117;
-            color: #ffffff;
+            background-color: #f8f9fa;
+            color: #333;
             font-family: 'Arial', sans-serif;
         }
         .navbar {
-            background-color: #161b22;
+            background-color: #ffffff;
             padding: 15px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            color: #007bff;
+        }
+        .navbar-brand:hover {
+            color: #0056b3;
         }
         .hero {
             background: url('https://static.vecteezy.com/system/resources/previews/006/413/089/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg') no-repeat center center;
             background-size: cover;
-            height: 100vh;
+            height: 50vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             transition: height 0.5s ease-in-out;
+            color: #ffffff;
         }
         .hero h1 {
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
-            font-size: 4rem;
-            color: #58a6ff;
-            transition: font-size 0.5s ease-in-out;
+            font-size: 3rem;
+            color: #ffffff;
         }
         .shrink {
-            height: 50vh !important;
+            height: 30vh !important;
         }
         .shrink h1 {
             font-size: 2.5rem !important;
         }
         .card {
-            background-color: #21262d;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333;
             border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            position: relative;
         }
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.3);
+            box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.3);
+        }
+        .card-body {
+            padding: 20px;
         }
         .details {
             display: none;
             margin-top: 10px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.1);
             padding: 10px;
             border-radius: 10px;
         }
         .footer {
-            background-color: #161b22;
+            background-color: #ffffff;
             padding: 20px;
-            font-size: 1.2rem;
+            text-align: center;
+            font-size: 1.1rem;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Hostly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -82,9 +94,11 @@
             </div>
         </div>
     </nav>
+
     <header class="hero animate__animated animate__fadeIn" id="hero">
         <h1>Planes de Hostly</h1>
     </header>
+
     <section class="py-5 animate__animated animate__fadeInUp">
         <div class="container text-center">
             <h2 class="text-primary">Elige tu Plan Ideal</h2>
@@ -137,9 +151,11 @@
             </div>
         </div>
     </section>
+
     <footer class="footer text-white text-center animate__animated animate__fadeInUp">
         <p>&copy; 2025 Hostly. Todos los derechos reservados.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleDetails(id) {
