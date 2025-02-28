@@ -9,13 +9,20 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #0d1117;
-            color: #ffffff;
+            background-color: #f4f6f9; /* Fondo más claro */
+            color: #333333; /* Texto oscuro para mayor legibilidad */
             font-family: 'Arial', sans-serif;
         }
         .navbar {
-            background-color: #161b22;
+            background-color: #ffffff; /* Barra de navegación blanca */
             padding: 15px;
+            border-bottom: 1px solid #ddd; /* Línea sutil en la parte inferior */
+        }
+        .navbar a {
+            color: #333333; /* Enlaces en color oscuro */
+        }
+        .navbar .navbar-toggler-icon {
+            background-color: #333; /* Icono del menú en color oscuro */
         }
         .contact-section {
             display: flex;
@@ -23,7 +30,7 @@
             justify-content: center;
             height: auto;
             padding: 60px 0;
-            background: url('https://source.unsplash.com/1600x900/?support,technology') no-repeat center center/cover;
+            background: url('https://static.vecteezy.com/system/resources/previews/006/413/089/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg') no-repeat center center/cover;
             position: relative;
         }
         .contact-form {
@@ -38,7 +45,7 @@
         .about-me, .org-chart-leadership, .equality-policy {
             padding: 60px 20px;
             text-align: center;
-            background-color: #161b22;
+            background-color: #ffffff; /* Fondo blanco */
         }
         .about-me img {
             max-width: 200px;
@@ -48,20 +55,20 @@
         .org-chart-leadership img {
             max-width: 80%;
             border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
         .footer {
-            background-color: #1f2937;
-            color: white;
+            background-color: #e0e0e0; /* Fondo gris claro */
+            color: #333333;
             padding: 20px;
             text-align: center;
         }
         .btn-primary {
-            background-color: #1f6feb;
+            background-color: #007bff; /* Azul claro */
             border: none;
         }
         .btn-primary:hover {
-            background-color: #144fcf;
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
         }
         .card-cv {
             background: linear-gradient(145deg, #ffffff, #f0f0f0);
@@ -74,10 +81,10 @@
             padding: 30px;
         }
         .card-cv h2, .card-cv h4 {
-            color: #1f6feb;
+            color: #007bff; /* Títulos en azul claro */
         }
         .card-cv p, .card-cv ul {
-            color: #333;
+            color: #333; /* Texto oscuro para mayor contraste */
         }
         .card-cv ul {
             list-style-type: none;
@@ -88,10 +95,10 @@
         }
         .card-cv ul li i {
             margin-right: 10px;
-            color: #1f6feb;
+            color: #007bff; /* Iconos en azul claro */
         }
         .card-cv hr {
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #ddd; /* Línea sutil */
         }
         /* Ajustes para la política de igualdad */
         .equality-policy ul {
@@ -102,13 +109,13 @@
             max-width: 800px;
         }
         .equality-policy ul li {
-            margin-bottom: 8px; /* Reducir el espacio entre elementos */
-            line-height: 1.5; /* Ajustar la altura de línea */
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown">
         <div class="container">
             <a class="navbar-brand" href="index.html">Hostly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
